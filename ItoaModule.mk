@@ -24,9 +24,11 @@ $(call itoa-sysroot-copy-files,\
     $(MODULE_PATH)/include/CoreFoundation,usr/include/CoreFoundation)
 
 $(eval $(call itoa-copy-file,\
-    $(MODULE_PATH)/APPLE_LICENSE,$(MODULE_NAME).license.txt))
+    $(MODULE_PATH)/APPLE_LICENSE,lib$(MODULE_NAME).APPLE_LICENSE))
 $(eval $(call itoa-copy-file,\
-    $(MODULE_PATH)/android/icu4c.license.txt,icu4c.license.txt))
+    $(MODULE_PATH)/APACHE_LICENSE,lib$(MODULE_NAME).APACHE_LICENSE))
+$(eval $(call itoa-copy-file,\
+    $(MODULE_PATH)/LICENSE.txt,lib$(MODULE_NAME).LICENSE.txt))
 
 MODULE_CFLAGS := \
     -I$(MODULE_PATH)/include \

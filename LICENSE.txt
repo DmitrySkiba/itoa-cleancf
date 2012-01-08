@@ -1,0 +1,2 @@
+Most of the code in itoa-cleancf project is under APSL, see APPLE_LICENSE.
+Other code is under Apache license, see APACHE_LICENSE.
